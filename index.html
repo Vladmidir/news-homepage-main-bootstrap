@@ -34,16 +34,20 @@
 
   <nav class="navbar">
     <img src="./assets/images/logo.svg" alt="">
-    <button class="btn" id="open-button" onclick="openMenu();"><img src="./assets/images/icon-menu.svg" alt=""></button>
-    <button class="btn" id="close-button"><img src="./assets/images/icon-menu-close.svg" alt=""></button>
-
-    <ul class="nav navbar navbar-right list-group" id="nav-links">
-      <li class="list-grop-item"><a href="#">Home</a></li>
-      <li class="list-grop-item"><a href="#">New</a></li>
-      <li class="list-grop-item"><a href="#">Popular</a></li>
-      <li class="list-grop-item"><a href="#">Trending</a></li>
-      <li class="list-grop-item"><a href="#">Categories</a></li>
-    </ul>
+    <button class="btn" id="open-button" name="open-menu" onclick="openMenu()">
+      <img src="./assets/images/icon-menu.svg" alt="">
+    </button>
+    <button class="btn" id="close-button" name="close-menu" onclick="closeMenu()">
+      <img src="./assets/images/icon-menu-close.svg" alt="">
+    </button>
+    <div id="overlay-div"></div>
+      <ul class="nav navbar navbar-right list-group" id="nav-links">
+        <li class="list-grop-item"><a href="#">Home</a></li>
+        <li class="list-grop-item"><a href="#">New</a></li>
+        <li class="list-grop-item"><a href="#">Popular</a></li>
+        <li class="list-grop-item"><a href="#">Trending</a></li>
+        <li class="list-grop-item"><a href="#">Categories</a></li>
+      </ul>
   </nav>
 
   <main class="container-fluid">
