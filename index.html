@@ -18,6 +18,9 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap" rel="stylesheet">
+
+  <script src="scripts.js"></script>
+
   <title>Frontend Mentor | News homepage</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
@@ -31,22 +34,25 @@
 
   <nav class="navbar">
     <img src="./assets/images/logo.svg" alt="">
-    <div class="nav navbar navbar-right" id="nav-links">
-      <a href="#">Home</a>
-      <a href="#">New</a>
-      <a href="#">Popular</a>
-      <a href="#">Trending</a>
-      <a href="#">Categories</a>
-    </div>
+    <button class="btn" id="open-button" onclick="openMenu();"><img src="./assets/images/icon-menu.svg" alt=""></button>
+    <button class="btn" id="close-button"><img src="./assets/images/icon-menu-close.svg" alt=""></button>
+
+    <ul class="nav navbar navbar-right list-group" id="nav-links">
+      <li class="list-grop-item"><a href="#">Home</a></li>
+      <li class="list-grop-item"><a href="#">New</a></li>
+      <li class="list-grop-item"><a href="#">Popular</a></li>
+      <li class="list-grop-item"><a href="#">Trending</a></li>
+      <li class="list-grop-item"><a href="#">Categories</a></li>
+    </ul>
   </nav>
 
   <main class="container-fluid">
-
     <div class="row">
     <div class="col-lg-8">
     <article>
       <div class="row">
         <picture>
+          <source media="(max-width: 1199px)" srcset="assets\images\image-web-3-mobile.jpg">
           <img src="./assets/images/image-web-3-desktop.jpg" alt="">
         </picture>
       </div>
@@ -66,7 +72,7 @@
   </div>
   <div class="col-lg-4 new-articles h-100 d-inline-block">
     <section class="container" style="max-width: 100%;">
-      <h2 id="section-header">New</h2>
+      <h2 id="new-section-header">New</h2>
       <ul class="list-group"> 
         <li class="list-grop-item">
           <h3 class="new-header"><a href="#">Hydrogen VS Electric Cars</a></h3>
@@ -87,36 +93,29 @@
   </div>
     </div>
 
-    <ol class="row list-group bottom-articles"><!--offset this thing vertically-->
-      
+    <ol class="row list-group bottom-articles">
       <li class="col-lg-4 list-group-item bottom-article">
-        <div class="holder">
           <img class="article-preview" src="./assets/images/image-retro-pcs.jpg" alt="">
-        </div>
         <div class="bottom-article-content">
-          <p class="num" aria-hidden="true">01</p>
+          <p class="bottom-article-num" aria-hidden="true">01</p>
           <h3><a href="#">Reviving Retro PCs</a></h3>
           <p>What happens when old PCs are given modern upgrades?</p>
         </div>
       </li>
 
       <li class="col-lg-4 list-group-item bottom-article">
-        <div class="holder">
           <img class="article-preview" src="./assets/images/image-top-laptops.jpg" alt="">
-        </div>
         <div class="bottom-article-content">
-          <p class="num" aria-hidden="true">02</p>
+          <p class="bottom-article-num" aria-hidden="true">02</p>
           <h3><a href="#">Top 10 Laptops of 2022</a></h3>
           <p>Our best picks for various needs and budgets.</p>
         </div>
       </li>
 
       <li class="col-lg-4 list-group-item bottom-article">
-        <div class="holder">
           <img  class="article-preview" src="./assets/images/image-gaming-growth.jpg" alt="">
-        </div>
         <div class="bottom-article-content">
-          <p class="num" aria-hidden="true">03</p>
+          <p class="bottom-article-num" aria-hidden="true">03</p>
           <h3><a href="#">The Growth of Gaming</a></h3>
           <p>How the pandemic has sparked fresh opportunities.</p>
         </div>
