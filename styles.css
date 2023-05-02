@@ -1,0 +1,135 @@
+body > *{
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    margin-top: 20px;
+    background-color: hsl(36, 100%, 99%);
+}
+
+ol, ul {
+    list-style-type: none;
+}
+
+.list-group > li {
+    border: 0;
+}
+
+.num {
+    font-size: 30px;
+    font-weight: 700;
+    color: hsl(233, 8%, 79%);
+}
+
+#featured-title {
+    font-size: 52px;
+    font-weight: 800;
+}
+
+#featured-description {
+    margin-top: 20px;
+    font-size: 15px;
+}
+
+#featured-button {
+    background-color: hsl(5, 85%, 63%);
+    color: white;
+    border: none;
+    border-radius: 0;
+    padding: 20px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#featured-button:hover {
+    background-color: hsl(240, 100%, 5%);
+}
+
+#section-header {
+    color: hsl(35, 77%, 62%);
+    font-weight: 800;
+}
+
+.new-header > a {
+    color: white;
+    font-weight: 700;
+}
+
+.new-paragraph {
+    color: hsl(233, 8%, 79%);
+}
+
+hr {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    color:hsl(233, 8%, 79%) ;
+}
+
+.bottom-article-content > h3 {
+    margin-top: 0;
+}
+
+.bottom-article-content > h3 > a{
+    font-size: large;
+    font-weight: 700;
+    color: hsl(240, 100%, 5%);
+}
+
+.bottom-article-content > h3 > a:hover {
+    text-decoration: none;
+    color: hsl(5, 85%, 63%);
+}
+
+#nav-links {
+    float: right;
+    transform: translate(0, 30%);
+    word-spacing: 2em;
+    margin-right: 20px;
+}
+
+#nav-links > a {
+    color:  hsl(236, 13%, 42%);
+}
+
+#nav-links > a:hover {
+    text-decoration: none;
+    color: hsl(35, 77%, 62%);
+}
+
+a:hover {
+    text-decoration: none;
+    color: hsl(35, 77%, 62%);
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+
+.new-articles {
+    background-color: hsl(240, 100%, 5%);
+    background-clip: content-box;
+    height: 100%;
+}
+
+
+
+.bottom-article {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+}
+
+.holder {
+    grid-row: 1/4;
+    grid-column: 1;
+}
+
+.bottom-article-content {
+    grid-column: 2/4;
+}

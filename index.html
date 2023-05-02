@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+
+    <!-- Latest compiled and minified bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+  <link rel="stylesheet" href="styles.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap" rel="stylesheet">
+  <title>Frontend Mentor | News homepage</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<!--Add a visually hidded h1-->
+<body class="container"> 
+
+  <nav class="navbar">
+    <img src="./assets/images/logo.svg" alt="">
+    <div class="nav navbar navbar-right" id="nav-links">
+      <a href="#">Home</a>
+      <a href="#">New</a>
+      <a href="#">Popular</a>
+      <a href="#">Trending</a>
+      <a href="#">Categories</a>
+    </div>
+  </nav>
+
+  <main class="container-fluid">
+
+    <div class="row">
+    <div class="col-lg-8">
+    <article>
+      <div class="row">
+        <picture>
+          <img src="./assets/images/image-web-3-desktop.jpg" alt="">
+        </picture>
+      </div>
+      <div class="row">
+        <h2 class="col-lg-6" id="featured-title" >The Bright Future of Web 3.0?</h2>
+        <div class="col-lg-6" id="featured-description" style="height: 100%;">
+          <p>
+            We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. 
+            But is it really fulfilling its promise?
+          </p>
+          <button class="btn btn-primary align-base text-uppercase" id="featured-button">
+            Read more
+          </button>
+        </div>
+      </div >
+    </article>
+  </div>
+  <div class="col-lg-4 new-articles h-100 d-inline-block">
+    <section class="container" style="max-width: 100%;">
+      <h2 id="section-header">New</h2>
+      <ul class="list-group"> 
+        <li class="list-grop-item">
+          <h3 class="new-header"><a href="#">Hydrogen VS Electric Cars</a></h3>
+          <p class="new-paragraph">Will hydrogen-fueled cars ever catch up to EVs?</p>
+        </li>
+        <hr>
+        <li class="list-grop-item">
+          <h3 class="new-header"><a href="#">The Downsides of AI Artistry</a></h3>
+          <p class="new-paragraph">What are the possible adverse effects of on-demand AI image generation?</p>
+        </li>
+        <hr>
+        <li class="list-grop-item">
+          <h3 class="new-header"><a href="#">Is VC Funding Drying Up?</a></h3>
+          <p class="new-paragraph">Private funding by VC firms is down 50% YOY. We take a look at what that means.</p>
+        </li>
+      </ul>
+    </section>
+  </div>
+    </div>
+
+    <ol class="row list-group bottom-articles"><!--offset this thing vertically-->
+      
+      <li class="col-lg-4 list-group-item bottom-article">
+        <div class="holder">
+          <img class="article-preview" src="./assets/images/image-retro-pcs.jpg" alt="">
+        </div>
+        <div class="bottom-article-content">
+          <p class="num" aria-hidden="true">01</p>
+          <h3><a href="#">Reviving Retro PCs</a></h3>
+          <p>What happens when old PCs are given modern upgrades?</p>
+        </div>
+      </li>
+
+      <li class="col-lg-4 list-group-item bottom-article">
+        <div class="holder">
+          <img class="article-preview" src="./assets/images/image-top-laptops.jpg" alt="">
+        </div>
+        <div class="bottom-article-content">
+          <p class="num" aria-hidden="true">02</p>
+          <h3><a href="#">Top 10 Laptops of 2022</a></h3>
+          <p>Our best picks for various needs and budgets.</p>
+        </div>
+      </li>
+
+      <li class="col-lg-4 list-group-item bottom-article">
+        <div class="holder">
+          <img  class="article-preview" src="./assets/images/image-gaming-growth.jpg" alt="">
+        </div>
+        <div class="bottom-article-content">
+          <p class="num" aria-hidden="true">03</p>
+          <h3><a href="#">The Growth of Gaming</a></h3>
+          <p>How the pandemic has sparked fresh opportunities.</p>
+        </div>
+      </li>
+    </ol>
+
+  </main>
+
+  <footer>
+
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="https://github.com/Vladmidir">Vlad Yaremchuk</a>.
+    </div>
+
+  </footer>
+</body>
+</html>
