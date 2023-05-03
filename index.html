@@ -6,12 +6,12 @@
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
 
-    <!-- Latest compiled and minified bootstrap -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-    <!-- jQuery library -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
-    <!-- Latest compiled JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <!-- Latest compiled and minified bootstrap -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <!-- Latest compiled JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
   <link rel="stylesheet" href="styles.css">
 
@@ -33,12 +33,12 @@
   <!--visually hidded h1-->
   <h1 style="display: none;">Gaming News</h1>
   <nav class="navbar">
-    <img src="./assets/images/logo.svg" alt="">
+    <img src="./assets/images/logo.svg" alt="website logo">
     <button class="btn" id="open-button" name="open-menu" onclick="openMenu()">
-      <img src="./assets/images/icon-menu.svg" alt="">
+      <img src="./assets/images/icon-menu.svg" alt="open side menu">
     </button>
     <button class="btn" id="close-button" name="close-menu" onclick="closeMenu()">
-      <img src="./assets/images/icon-menu-close.svg" alt="">
+      <img src="./assets/images/icon-menu-close.svg" alt="close side menu">
     </button>
     <!--maybe try using display: inline-block; with a pseudo element instead of the empty div.-->
     <div id="overlay-div"></div>
@@ -58,7 +58,7 @@
         <div class="row">
           <picture>
             <source media="(max-width: 1199px)" srcset="assets\images\image-web-3-mobile.jpg">
-            <img src="./assets/images/image-web-3-desktop.jpg" alt="">
+            <img src="./assets/images/image-web-3-desktop.jpg" alt="abstract puzzle picture">
           </picture>
         </div>
         <div class="row">
@@ -68,14 +68,14 @@
               We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. 
               But is it really fulfilling its promise?
             </p>
-            <button class="btn btn-primary align-base text-uppercase" id="featured-button">
+            <button class="btn btn-primary text-uppercase" id="featured-button">
               Read more
             </button>
           </div>
         </div >
       </article>
     </div>
-      <div class="col-lg-4 new-articles h-100 d-inline-block">
+      <div class="col-lg-4 new-articles">
         <section class="container" style="max-width: 100%;">
           <h2 id="new-section-header">New</h2>
           <ul class="list-group"> 
@@ -99,8 +99,9 @@
     </div>
 
     <ol class="row list-group bottom-articles">
+      <h2 style="display: none;">Trending Articles</h2>
       <li class="col-lg-4 list-group-item bottom-article">
-          <img class="article-preview" src="./assets/images/image-retro-pcs.jpg" alt="">
+          <img class="article-preview" src="./assets/images/image-retro-pcs.jpg" alt="retro pc">
         <div class="bottom-article-content">
           <p class="bottom-article-num" aria-hidden="true">01</p>
           <h3><a href="#">Reviving Retro PCs</a></h3>
@@ -109,7 +110,7 @@
       </li>
 
       <li class="col-lg-4 list-group-item bottom-article">
-          <img class="article-preview" src="./assets/images/image-top-laptops.jpg" alt="">
+          <img class="article-preview" src="./assets/images/image-top-laptops.jpg" alt="keyboard">
         <div class="bottom-article-content">
           <p class="bottom-article-num" aria-hidden="true">02</p>
           <h3><a href="#">Top 10 Laptops of 2022</a></h3>
@@ -118,7 +119,7 @@
       </li>
 
       <li class="col-lg-4 list-group-item bottom-article">
-          <img  class="article-preview" src="./assets/images/image-gaming-growth.jpg" alt="">
+          <img  class="article-preview" src="./assets/images/image-gaming-growth.jpg" alt="gaming controller">
         <div class="bottom-article-content">
           <p class="bottom-article-num" aria-hidden="true">03</p>
           <h3><a href="#">The Growth of Gaming</a></h3>

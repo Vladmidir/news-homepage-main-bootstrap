@@ -175,6 +175,10 @@ hr {
     width: 100%;
 }
 
+.disable-scroll {
+    overflow: hidden;
+}
+
 @media (max-width: 1199px) {
     .bottom-articles {
         margin-top: 40px;
@@ -220,5 +224,4 @@ hr {
         height: 100vh;
         transition: 0.5s;
     }
-
 }
