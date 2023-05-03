@@ -42,7 +42,7 @@ Users should be able to:
 
 ### What I learned
 
-Learned Bootstrap grid and some Bootstrap 3 classes like btn and list-group.
+Learned Bootstrap grid and some Bootstrap3 classes like btn and list-group.
 ```html
 <div class="container container-fluid row col-*screen-size*-*col-size* list-group list-group-item navbar btn "></div>
 ```
